@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section   {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(img/imagemfundo.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    opacity: 0.4;
+    z-index: 1;
+
+}
+
+
+
+nav{
+   position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 45px;
+    box-sizing: border-box;
+    background: rgba(0,0,0, 0.6);
+    border-bottom:  1px solid #fff;
+    z-index: 2;
+   
+
+
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    display: flex;
+   
+    
+}
+
+nav ul li a{
+    line-height: 5rem;
+    color: bisque;
+    padding: 1rem 1rem;
+    font-size: 15px;
+    font-weight: bold;
+   
+    
+}
+
+nav ul li a:hover{
+    background: rgb(70, 70, 196);
+    border-radius: 5px;
+}
+
+.container-apresentação{
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    float: left;
+    display: grid;
+    grid-template-columns: 22% 75%;
+    position: absolute;
+    z-index: 2;
+   
+
+}
+
+.imagem-perfil{
+    margin: 1rem 0;
+    max-width: 100%;
+    width: 14rem;
+    margin-left: 5px;
+    
+    
+}
+
+.perfil{
+
+    text-align: justify;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 3px;
+    z-index: 2;
+    
+
+}
+
+
+.container-contato{
+   
+    width: 100%;
+    float: center;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 15% 60%;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    font-weight: bold;
+    
+   
+
+}
+h1{
+    margin: 10rem 1rem 0 1rem;
+    text-align:  center;
+    
+}
+
+.imagem-contato{
+    
+    max-width: 100%;
+    height: auto;
+    width: 7rem;
+    float: left;
+    
+    
+}
+.container-experiencias{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    float: left;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    position: absolute;
+    z-index: 2;
+    
+}
+.imagem-experiencias{
+    margin: 1rem 0;
+    max-width: 100%;
+    width: 20rem;
+    margin-left: 5px;
+}
+.container-formação{
+    
+    font-size: 1.5rem;
+    margin: 1rem;
+    float: left;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    position: absolute;
+    z-index: 2;
+}
+.imagem-formação{
+    max-width: 100%;
+    width: 40rem;
+    margin-left: 5px;
+}
