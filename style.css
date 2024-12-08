@@ -1,24 +1,24 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
 }
 section   {
     position: absolute;
+    margin: 0;
+    padding: 0;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background: url(img/imagemfundo.jpg) ;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;   
+    background-position: center center;
+    background-size: cover; 
     opacity: 0.4;
     z-index: 1;
 
 }
-
-
 
 nav{
    position: fixed;
@@ -92,19 +92,25 @@ nav ul li a:hover{
     
 
 }
-
-
-.container-contato{
-   
+.container-contato .contato {
     width: 100%;
-    float: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+
+.contato{
+   
+    width: 70%;
     position: absolute;
     display: grid;
-    grid-template-columns: 15% 60%;
+    grid-template-columns: 7% 60%;
     align-items: center;
     z-index: 2;
-    position: absolute;
     font-weight: bold;
+    margin:1rem;
+    float: right;
     
    
 
@@ -112,18 +118,63 @@ nav ul li a:hover{
 h1{
     margin: 10rem 1rem 0 1rem;
     text-align:  center;
+   
+
+
     
 }
 
 .imagem-contato{
     
     max-width: 100%;
-    height: auto;
-    width: 7rem;
+    width: 4rem;
     float: left;
     
     
 }
+
+.menu-formulario{
+    font-size: 1rem;
+    margin: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+
+}
+form{
+    display: grid;
+    padding: 8px 0px;
+    margin: 8px 16px;
+}
+
+input {
+    width: 30%;
+    
+}
+
+input[type=text]
+{
+    height: 100px;
+    
+}
+
+.formulario h1{
+    margin: 2rem;
+    padding: 0;
+    font-size: 1rem;
+    text-align: left;
+}
+button{
+    
+    background-color:rgb(116, 116, 221) ;
+    border: none;
+    width: 100px;
+    height: 30px;
+   margin: 1rem 0;
+}
+
+
+
 .container-experiencias{
     font-size: 1.5rem;
     margin: 2rem 0;
@@ -132,6 +183,7 @@ h1{
     grid-template-columns: 30% 70%;
     position: absolute;
     z-index: 2;
+    width: 100%;
     
 }
 .imagem-experiencias{
@@ -141,7 +193,6 @@ h1{
     margin-left: 5px;
 }
 .container-formação{
-    
     font-size: 1.5rem;
     margin: 1rem;
     float: left;
